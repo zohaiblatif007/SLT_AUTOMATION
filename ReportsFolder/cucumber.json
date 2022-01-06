@@ -1,0 +1,171 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 31719284100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I navigate to patient grid",
+            "match": {
+              "location": "SD_PatientGrid.I_navigate_to_patient_grid()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6643871800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SD_Login.Browser()"
+            }
+          }
+        ],
+        "line": 82,
+        "name": "Delete the specific record in vital signs",
+        "description": "",
+        "id": "add-edit-and-delete-in-vital-sign;delete-the-specific-record-in-vital-signs;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 30530858900,
+              "status": "passed"
+            },
+            "line": 73,
+            "name": "I search tahmeed, tahmeed using global search",
+            "match": {
+              "arguments": [
+                {
+                  "val": "tahmeed, tahmeed",
+                  "offset": 9
+                }
+              ],
+              "location": "SD_SearchPatient.search_Patient(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10807173000,
+              "status": "passed"
+            },
+            "line": 74,
+            "name": "I click on Clinical tab",
+            "match": {
+              "location": "ProblemListsteps.I_am_on_PWB_CLinical_section()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6041599200,
+              "status": "passed"
+            },
+            "line": 75,
+            "name": "I click on Vital Sign\ttab",
+            "match": {
+              "location": "Vitalsignsteps.I_click_on_vital_sign_button()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 7142570400,
+              "status": "passed"
+            },
+            "line": 76,
+            "name": "I enter 98 to delete record in vital signs",
+            "match": {
+              "arguments": [
+                {
+                  "val": "98",
+                  "offset": 8
+                }
+              ],
+              "location": "Vitalsignsteps.I_click_on_delete_button(String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 8695493900,
+              "status": "passed"
+            },
+            "line": 77,
+            "name": "I should see message of success for deleting record",
+            "match": {
+              "arguments": [
+                {
+                  "val": "deleting",
+                  "offset": 36
+                }
+              ],
+              "location": "ProblemListsteps.saved_alerts_shoud_be_popup(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5099854600,
+              "status": "passed"
+            },
+            "line": 78,
+            "name": "I should see the deleted vital signs not present on grid",
+            "match": {
+              "location": "Vitalsignsteps.very_deleted_data_should_benot_visible_on_the_UI()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@VitalSign"
+          },
+          {
+            "name": "@Delete"
+          },
+          {
+            "name": "@DeleteVitalSign"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@Sanity"
+          }
+        ]
+      }
+    ],
+    "name": "Add Edit and Delete in Vital Sign",
+    "description": "",
+    "id": "add-edit-and-delete-in-vital-sign",
+    "keyword": "Feature",
+    "uri": "Include/features/PatientGrid/ClinicalSection/VitalSign.feature",
+    "tags": [
+      {
+        "name": "@VitalSign",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

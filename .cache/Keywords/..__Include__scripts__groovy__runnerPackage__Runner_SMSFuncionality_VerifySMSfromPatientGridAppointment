@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "66EA1BB2EACC16A1AF86CC13E5B0B9F0",
+  "keywordClasses": [
+    {
+      "name": "runnerPackage.Runner_SMSFuncionality_VerifySMSfromPatientGridAppointment",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

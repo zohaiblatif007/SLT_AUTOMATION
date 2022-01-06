@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "8FB3F12A2A649BB7F8DDEDCA47E119FD",
+  "keywordClasses": [
+    {
+      "name": "patientGrid.Assessment",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}
